@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/igc-club/static/css/main.e93fff88.chunk.css",
+    "main.js": "/igc-club/static/js/main.8f997722.chunk.js",
+    "main.js.map": "/igc-club/static/js/main.8f997722.chunk.js.map",
+    "runtime-main.js": "/igc-club/static/js/runtime-main.bd7f445a.js",
+    "runtime-main.js.map": "/igc-club/static/js/runtime-main.bd7f445a.js.map",
+    "static/css/2.b48b1b29.chunk.css": "/igc-club/static/css/2.b48b1b29.chunk.css",
+    "static/js/2.e7758764.chunk.js": "/igc-club/static/js/2.e7758764.chunk.js",
+    "static/js/2.e7758764.chunk.js.map": "/igc-club/static/js/2.e7758764.chunk.js.map",
+    "index.html": "/igc-club/index.html",
+    "precache-manifest.c1041257847a5f727398ebf48b067883.js": "/igc-club/precache-manifest.c1041257847a5f727398ebf48b067883.js",
+    "service-worker.js": "/igc-club/service-worker.js",
+    "static/css/2.b48b1b29.chunk.css.map": "/igc-club/static/css/2.b48b1b29.chunk.css.map",
+    "static/css/main.e93fff88.chunk.css.map": "/igc-club/static/css/main.e93fff88.chunk.css.map",
+    "static/media/logo.jpg": "/igc-club/static/media/logo.31b2fc70.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd7f445a.js",
+    "static/css/2.b48b1b29.chunk.css",
+    "static/js/2.e7758764.chunk.js",
+    "static/css/main.e93fff88.chunk.css",
+    "static/js/main.8f997722.chunk.js"
+  ]
+}
