@@ -1,7 +1,18 @@
-.size{
- background-color: aqua;
+.header{
+ background-color: ;
 height: 50px;
- width: 50%;
- margin: auto;
- 
+ width: 100%;
+ border-bottom: solid gray;
+ border-width: 1px;
+}
+.logo{
+    height: 45px;
+    float: left;
+    padding: 7px;
+}
+.cn-btn{
+    
+    float: right;
+    width: 60%;
+    height: 100%;
 }
