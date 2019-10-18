@@ -41,7 +41,7 @@ const ResponsiveHeader = () => {
           />
         </a>
       </div>
-      <div className="logo  ">
+      <div  style={{position:"absolute" , right:"0",padding:"10px"}}>
         <img src={logo} style={{ width: "70px" }} alt="Logo" />
       </div>
       <div className="sidenav">
