@@ -43,7 +43,7 @@ const ResponsiveHeader = () => {
       
       <div className="sidenav">
         {opened ? (
-          <div style={{ height: "700px" }} className="animated slideInLeft">
+          <div style={{ height: "700px" }} className=" sidenav animated slideInLeft">
             <SideNav
               setOpen={setOpened}
               navitems={["About", "Forum", "Info"]}
