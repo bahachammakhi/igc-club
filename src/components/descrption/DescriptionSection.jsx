@@ -20,7 +20,7 @@ const object = [
     description: "Acquérir de l’expérience",
     smalldescription: "et renforcer les compétences",
     img:
-      "https://scontent.ftun2-1.fna.fbcdn.net/v/t1.0-9/72438494_1343236715835282_207921651721961472_n.jpg?_nc_cat=103&_nc_oc=AQnSCn6UvFqoRQwJh4vszy325wJ2_KZDo7l6ot2c1n3CPGi-M9YrcR86bp3vg_eB_TE&_nc_ht=scontent.ftun2-1.fna&oh=e6d509c6d145fac97341a8a3bb9bb6c8&oe=5E3115F8"
+      "https://scontent.ftun2-1.fna.fbcdn.net/v/t1.0-9/72780315_1342171885941765_290347202323152896_n.jpg?_nc_cat=110&_nc_oc=AQnGHfA-Q3pnz4i_eVLkZX8tJY0ulLIySIYNKgSBy4_pHNkKN8To0RqSEo0-JvTX9DA&_nc_ht=scontent.ftun2-1.fna&oh=1eb85ffdb5b3a9b558ab726d43bd58c2&oe=5E1BFA64"
   }
 ];
 
