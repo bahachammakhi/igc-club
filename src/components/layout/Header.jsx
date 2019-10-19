@@ -19,18 +19,18 @@ const Header = ({ match }) => {
   ));
   return (
     <div className="header">
-      <img className="logo" src={Logo}></img>
+      <img className="logo" alt="logo" src={Logo} />
       <div className="cn-btn">
         {content}
         <div className="media">
           <a href="http://www.google.com">
-            <Icon type="facebook" className="logo-media"  />
+            <Icon type="facebook" className="logo-media" />
           </a>
           <a href="http://www.google.com">
             <Icon type="twitter" className="logo-media" />
           </a>
           <a href="http://www.google.com">
-            <Icon type="instagram" className="logo-media"  />{" "}
+            <Icon type="instagram" className="logo-media" />{" "}
           </a>
         </div>
       </div>

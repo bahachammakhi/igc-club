@@ -11,7 +11,7 @@ window.onresize= () => setState(!state);
   return (
     <Fragment>
       <div>{(window.innerWidth<700) ? <ResponsiveHeader /> : <Header />}</div>
-      <div>
+      <div >
         <Route {...props} />
       </div>
     </Fragment>
