@@ -4,6 +4,7 @@
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  transition: linear;
 }
 
 @keyframes fadeInAnimation {
@@ -64,6 +65,14 @@
   .imgs::after {
     transition: width 2s;
   }
+  .button{
+    margin-top: 5%;
+    width:120px;
+    height: 36px;
+    background-color: #1967d2;
+    border-radius: 5px;
+    color:white;
+}
   .texts {
     transition-property: inherit;
     display: flex;

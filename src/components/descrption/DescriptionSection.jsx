@@ -26,40 +26,38 @@ const object = [
 
 const DescriptionSection = () => {
   const [currentObject, setobject] = useState(0);
+  const [currentData, setData] = useState(object[0]);
+  
 
   useEffect(() => {
-    const myVar = setInterval(() => {
-      if (currentObject === 2) {
-        setobject(0);
-      } else {
+    const myVar = setTimeout(() => {
+      if (currentObject < 3) {
+        setData(object[currentObject]);
         setobject(currentObject + 1);
+      }else{
+        setobject(0)
+        clearTimeout(myVar);
       }
-    }, 7000);
-    document.addEventListener("visibilitychange", function() {
-      console.log(document.visibilityState);
-      if (document.visibilityState === "hidden") clearInterval(myVar);
-      if (document.visibilityState === "visible") {
-        // document.location.reload();
-      }
-    });
+    }, 3000);
+
+    // document.addEventListener("visibilitychange", function() {
+    //   console.log(document.visibilityState);
+    //   if (document.visibilityState === "hidden") clearInterval(myVar);
+    //   if (document.visibilityState === "visible") {
+    //     setData(object[0]);
+    //   }
+    // });
   });
   return (
     <div className="wrapper">
       <div className="texts">
-        <span className="title">{object[currentObject].description}</span>
-        <span className="smalldescription">
-          {object[currentObject].smalldescription}
-        </span>
-        <div className="button">
-          <Button className="button">Contact us</Button>
-        </div>
+        <span className="title">{currentData.description}</span>
+        <span className="smalldescription">{currentData.smalldescription}</span>
+
+        <Button className="button">Contact us</Button>
       </div>
 
-      <img
-        className="imgs animated pulse"
-        src={object[currentObject].img}
-        alt="pic"
-      />
+      <img className="imgs animated pulse" src={currentData.img} alt="pic" />
     </div>
   );
 };
