@@ -10,7 +10,7 @@ import RootContainer from "./containers/RootContainer";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Route path="/" component={RootContainer} />
       </BrowserRouter>
     </div>
