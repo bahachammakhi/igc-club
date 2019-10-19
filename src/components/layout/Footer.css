@@ -1,20 +1,18 @@
 .cn-footer{
     width: 100%;
-    height: 200PX;  
-  
-    position: absolute;
-    bottom: 0;
-    padding: 2%;
+    height: 250PX;  
+  overflow: hidden;
+  padding: 2%;
     box-shadow: 0PX 0px 8px 0PX rgba(0, 0, 0, 0.5);
 }
 .ft-nav{
-width: 95%;
+
 height: 50px;
+margin-top:2%;
 margin-left: 4%;
 margin-right: auto;
 display: flex;
-bottom: 0;
-position: absolute;
+
 }
 .igc{
         font-family: Arial, Helvetica, sans-serif;
@@ -46,29 +44,25 @@ color: rgba(1,1,1,0.6);
       
       width: 75%;  
       display: flex;
-      background: yellow;
   }
   .text{
      width: 70%;
   }
   .btn-join{
- 
-    width: 15%;  height: 25%;
-    margin-left: 20px;
-  background: #1967D2;
-  font-size: 16px;
-  font-weight: 700;
-  border-radius: 25px;
-  color: #FFF;
-  position: absolute;
-  right: 27%;
-  text-align: center;
-  padding: 12px 2px 2px 2px ;
+   margin-right: 10%;
+    width:150px;
+    height: 36px;
+    background-color: #1967d2;
+    border-radius: 5px;
+    color:white;
   }
   .btn-join:hover{
-  background: #4885ed;
-  
-  }
+    width:150px;
+    height: 36px;
+    background-color: #2b72d5;
+    border-radius: 5px;
+    color:white;
+}
   @media screen and (max-width: 768px) {
    
   }

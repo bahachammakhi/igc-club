@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Button } from "antd";
 import "./Footer.css";
 const Footer = () => {
 return(
@@ -9,9 +10,9 @@ return(
      <div className="about">
 <div className="text">Hash Code is one of the three competitions that Google holds for participants of all skill levels. Find your challenge.</div>
     
-     <div className="btn-join">
-       jion us
-     </div>
+     <Button className="btn-join">
+      Join us
+     </Button>
     </div>
     </div>
             <div className="ft-nav">
