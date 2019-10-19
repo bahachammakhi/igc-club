@@ -14,11 +14,8 @@ const ResponsiveHeader = () => {
         type="right"
         style={{
           fontSize: "30px",
-          fontWeight: "bolder",
           color: "#333333",
-          textAlign: "center",
-          fontStyle: "italic",
-          padding: "15px"
+          padding: "15px",    
         }}
         onClick={() => {
           setOpened(true);
@@ -41,9 +38,9 @@ const ResponsiveHeader = () => {
           />
         </a>
       </div>
-      <div  style={{position:"absolute" , right:"0",padding:"10px"}}>
-        <img src={logo} style={{ width: "70px" }} alt="Logo" />
-      </div>
+
+        <img src={logo} style={{ width: "70px" , position:"relative", right:"0",margin:"5px"  }} alt="Logo" />
+      
       <div className="sidenav">
         {opened ? (
           <div style={{ height: "700px" }} className="animated slideInLeft">

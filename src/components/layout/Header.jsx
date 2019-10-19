@@ -10,6 +10,11 @@ const objnav = [
   "Qui sommes-nous",
   "Evénements"
 ];
+const content = objnav.map(post => (
+  <Link to="first"key={Math.floor(Math.random() * 10)} className="nav-btn" style={{ textDecoration: "none" }}>
+    {post}
+  </Link>
+));
 
 const Header = ({ match }) => {
   const content = objnav.map(post => (
