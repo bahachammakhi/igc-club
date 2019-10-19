@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0fec8fe9941cefb4f2950945112a3666",
+    "revision": "529c139c8bc2c13d9846218d8de6f98d",
     "url": "/igc-club/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/igc-club/static/css/2.b48b1b29.chunk.css"
   },
   {
-    "revision": "7f3b3f5f41788bb5065b",
+    "revision": "7659091023ffd1a26e9e",
     "url": "/igc-club/static/css/main.e93fff88.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/igc-club/static/js/2.e7758764.chunk.js"
   },
   {
-    "revision": "7f3b3f5f41788bb5065b",
-    "url": "/igc-club/static/js/main.cb9fe95f.chunk.js"
+    "revision": "7659091023ffd1a26e9e",
+    "url": "/igc-club/static/js/main.abe205c8.chunk.js"
   },
   {
     "revision": "d314e50d490ddb3c340e",
