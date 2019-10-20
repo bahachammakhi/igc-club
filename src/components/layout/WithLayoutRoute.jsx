@@ -6,6 +6,7 @@ import classes from "./withlayoutrouter.module.scss";
 import Header from "./Header";
 import Footer from "./Footer";
 import ResponsiveHeader from "./ResponsiveHeader/ResponsiveHeader";
+import { useDidMount } from "./../../hooks/useLifeCycle";
 
 const WithLayoutRoute = ({ ...props }) => {
   const [state, setState] = useState(1800);
@@ -20,6 +21,12 @@ const WithLayoutRoute = ({ ...props }) => {
     }
   };
   window.addEventListener("resize", resize);
+  useDidMount(() => {
+    if (window.innerWidth < 700) {
+      setState(600);
+    }
+  });
+
   return (
     <Fragment>
       <div>{state < 700 ? <ResponsiveHeader /> : <Header />}</div>
