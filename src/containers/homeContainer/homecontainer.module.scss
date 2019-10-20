@@ -1,3 +1,17 @@
 .members{
 margin-top:20px;
+position: relative;
+}
+.about{
+    padding:0px;
+
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.description{
+    padding-bottom: 5%;
 }

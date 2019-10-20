@@ -23,10 +23,10 @@ const Partners = () => {
         </span>
       </div>
       <div className={classes.imgs}>
-        <Popover content={"GDG monastir"} placement="bottom">
+        <Popover content={<div className={classes.popover}>GDG</div>} placement="bottom"  >
           <img className={classes.logo} alt="pic" src={gdgmona} />
         </Popover>
-        <Popover content={"GOMYCODE"} placement="bottom">
+        <Popover content={<div className={classes.popover}>GOMYCODE</div>} placement="bottom">
           <img className={classes.logo} alt="pic" src={gomycode} />
         </Popover>
       </div>
