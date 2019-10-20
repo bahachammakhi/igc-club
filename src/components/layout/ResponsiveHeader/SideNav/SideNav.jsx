@@ -2,13 +2,13 @@ import React, { setState } from "react";
 import { withRouter, Link } from "react-router-dom";
 import { Icon } from "antd";
 
-import "./sidenav.style.scss";
+import classes from "./sidenav.module.scss";
 const SideNav = ({ navitems, match, setOpen }) => {
   const navlinks = navitems.map(item => {
     if (item === "About" && match.path === "/") {
       return (
         <Link
-          className="nav-item"
+          className={classes.navitem}
           style={{
             color: "#4285F4",
             textDecoration: "none",
@@ -23,7 +23,7 @@ const SideNav = ({ navitems, match, setOpen }) => {
     if (item !== match.path) {
       return (
         <Link
-          className="nav-item"
+          className={classes.navitem}
           style={{ color: "black", textDecoration: "none" }}
         >
           {item}
@@ -32,7 +32,7 @@ const SideNav = ({ navitems, match, setOpen }) => {
     } else {
       return (
         <Link
-          className="nav-item"
+          className={classes.navitem}
           style={{
             color: "#4285F4",
             textDecoration: "none",
@@ -46,7 +46,7 @@ const SideNav = ({ navitems, match, setOpen }) => {
     }
   });
   return (
-    <div className="wrapper">
+    <div className={classes.wrapper}>
       <Icon
         type="close"
         style={{ fontSize: "20px", padding: "20px" }}

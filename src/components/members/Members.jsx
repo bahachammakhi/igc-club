@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ItemsCarousel from "react-items-carousel";
 import { Card, Icon, Avatar, Button, Col } from "antd";
-import "./members.style.scss";
-import { useDidMount } from "../../../hooks/useLifeCycle";
+import classes from "./members.module.scss";
+import { useDidMount } from "../../hooks/useLifeCycle";
 const { Meta } = Card;
 
 const memeber = [
@@ -38,14 +38,14 @@ const memeber = [
 
 const Members = () => {
   const [activeitem, changeActiveItem] = useState(0);
-  const [nbcards,setNbcards] = useState(3);
+  const [nbcards, setNbcards] = useState(3);
 
-  useDidMount(()=>{
-   if(window.innerWidth <768){
-    setNbcards(1)
-  } 
-  })
-  
+  useDidMount(() => {
+    if (window.innerWidth < 768) {
+      setNbcards(1);
+    }
+  });
+
   const handleActiveItem = item => {
     changeActiveItem(item);
     clearTimeout(vart);

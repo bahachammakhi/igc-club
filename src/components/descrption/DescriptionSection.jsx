@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./descriptionsection-style.scss";
+import classes from "./descriptionsection.module.scss";
 import { Button } from "antd";
 
 const object = [
@@ -27,15 +27,14 @@ const object = [
 const DescriptionSection = () => {
   const [currentObject, setobject] = useState(0);
   const [currentData, setData] = useState(object[0]);
-  
 
   useEffect(() => {
     const myVar = setTimeout(() => {
       if (currentObject < 3) {
         setData(object[currentObject]);
         setobject(currentObject + 1);
-      }else{
-        setobject(0)
+      } else {
+        setobject(0);
         clearTimeout(myVar);
       }
     }, 3000);
@@ -49,15 +48,21 @@ const DescriptionSection = () => {
     // });
   });
   return (
-    <div className="wrapper">
-      <div className="texts">
-        <span className="title">{currentData.description}</span>
-        <span className="smalldescription">{currentData.smalldescription}</span>
+    <div className={classes.wrapper}>
+      <div className={classes.texts}>
+        <span className={classes.title}>{currentData.description}</span>
+        <span className={classes.smalldescription}>
+          {currentData.smalldescription}
+        </span>
 
-        <Button className="button">Contact us</Button>
+        <Button className={classes.button}>Contact us</Button>
       </div>
 
-      <img className="imgs animated pulse" src={currentData.img} alt="pic" />
+      <img
+        className={`${classes.imgs} animated pulse`}
+        src={currentData.img}
+        alt="pic"
+      />
     </div>
   );
 };
