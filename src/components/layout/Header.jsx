@@ -11,7 +11,12 @@ const objnav = [
   "Evénements"
 ];
 const content = objnav.map(post => (
-  <Link to="first"key={Math.floor(Math.random() * 10)} className="nav-btn" style={{ textDecoration: "none" }}>
+  <Link
+    to="first"
+    key={Math.floor(Math.random() * 10)}
+    className="nav-btn"
+    style={{ textDecoration: "none" }}
+  >
     {post}
   </Link>
 ));

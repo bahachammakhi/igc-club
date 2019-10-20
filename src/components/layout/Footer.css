@@ -45,19 +45,6 @@
     padding: 10px;
     box-shadow: 0px 8px 18px 8px rgba(0, 0, 0, 0.5);
     text-align: center;
-<<<<<<< HEAD
-  }
-  .grid-item {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .titles {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 16px;
-    font-weight: bold;
-  }
-=======
     }
     .grid-item {
       margin-left: 0;
@@ -79,5 +66,4 @@
   font-weight: 400;
   color: gray;
   text-decoration: none solid rgb(86, 98, 107);
->>>>>>> 4e67c2286653270f3b4a8b3ff884344025bcc46c
 }
