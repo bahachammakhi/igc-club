@@ -1,30 +1,42 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from "antd";
+import { Icon } from "antd";
+import Logo from "./logo.jpg";
 import "./Footer.css";
 const Footer = () => {
 return(
 <div className="cn-footer">
-    <div className="cn-about">
-     <div className="title">Looking for more challenges?</div>
-     <div className="about">
-<div className="text">Hash Code is one of the three competitions that Google holds for participants of all skill levels. Find your challenge.</div>
-    
-     <Button className="btn-join">
-      Join us
-     </Button>
-    </div>
-    </div>
-            <div className="ft-nav">
-        <div className="igc">istic google club :  </div>
-        <div className="btn-nav-ft">trzt</div>
-        <div className="btn-nav-ft">trzt</div>
-        <div className="btn-nav-ft">trzt</div>
-        <div className="btn-nav-ft">trzt</div>
-        <div className="btn-nav-ft">trzt</div>
-        <div className="btn-nav-ft">trzt</div>
+<div className="grid-item">
+    <div className="titles">
+    PRODUCT
         </div>
-    
+        <div className="child">Home</div>
+        <div className="child">Contact</div>
+        <div className="child">Notre équipe</div>
+        <div className="child">Qui sommes-nous</div>
+        <div className="child">Evénements</div>
+</div>
+<div className="grid-item">
+     <div className="titles">
+    PRODUCT
+        </div>
+<div className="child">Privacy Policy</div>
+<div className="child">Terms and Conditions</div>
+
+
+        </div>
+<div className="grid-item"> <div className="titles">
+CONTACT US
+        </div>
+        <div className="child" > <Icon type="mail" />hakimmaaouai@gmail.com</div>
+        </div>
+
+<div className="grid-item" style={{  textAlign: 'center' }}> 
+
+<img src={Logo} className="logos" alt="eara"/>
+<div> Copyright @ 2019 Istic google club</div>
+<div>All rights reserved</div>
+        </div>
 </div>
 );
 } ;
