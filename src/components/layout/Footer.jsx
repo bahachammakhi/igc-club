@@ -3,22 +3,33 @@ import { Link } from "react-router-dom";
 import { Icon } from "antd";
 import Logo from "./logo.jpg";
 import "./Footer.css";
+const objnav = [
+        "Home",
+        "Contact",
+        "Notre équipe",
+        "Qui sommes-nous",
+        "Evénements"
+      ];
 const Footer = () => {
+        const content = objnav.map(post => (
+                <Link to="first"key={Math.floor(Math.random() * 10)}  style={{ textDecoration: "none" }} >
+                        <div className="child" >   {post}</div>
+                  
+                </Link>
+              ));
+              
+
 return(
 <div className="cn-footer">
 <div className="grid-item">
     <div className="titles">
     PRODUCT
         </div>
-        <div className="child">Home</div>
-        <div className="child">Contact</div>
-        <div className="child">Notre équipe</div>
-        <div className="child">Qui sommes-nous</div>
-        <div className="child">Evénements</div>
+       {content}
 </div>
 <div className="grid-item">
      <div className="titles">
-    PRODUCT
+     ABOUT US
         </div>
 <div className="child">Privacy Policy</div>
 <div className="child">Terms and Conditions</div>
@@ -28,14 +39,15 @@ return(
 <div className="grid-item"> <div className="titles">
 CONTACT US
         </div>
-        <div className="child" > <Icon type="mail" />hakimmaaouai@gmail.com</div>
+        <div className="child" > <Icon type="mail"   style={{ fontSize: '15px', color: 'grey', marginRight:'5px' }}/>hakimmaaouai@gmail.com</div>
+        <div className="childds" > <Icon type="phone"  style={{ fontSize: '15px', color: 'grey', marginRight:'5px' }} />Tel : 25605102</div>
         </div>
 
 <div className="grid-item" style={{  textAlign: 'center' }}> 
 
 <img src={Logo} className="logos" alt="eara"/>
-<div> Copyright @ 2019 Istic google club</div>
-<div>All rights reserved</div>
+<div className="childds" style={{marginTop:'25px'}}> Copyright @ 2019 Istic google club</div>
+<div className="childds">All rights reserved</div>
         </div>
 </div>
 );
