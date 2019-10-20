@@ -10,8 +10,8 @@ const objnav = [
   "Qui sommes-nous",
   "Evénements"
 ];
-const Footer = () => {
-  const content = objnav.map(post => (
+const content = objnav.map(post => {
+  return (
     <Link
       to="first"
       key={Math.floor(Math.random() * 10)}
@@ -19,8 +19,9 @@ const Footer = () => {
     >
       <div className="child"> {post}</div>
     </Link>
-  ));
-
+  );
+});
+const Footer = () => {
   return (
     <div className="cn-footer">
       <div className="grid-item">

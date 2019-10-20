@@ -9,7 +9,6 @@ import ResponsiveHeader from "./ResponsiveHeader/ResponsiveHeader";
 
 const WithLayoutRoute = ({ ...props }) => {
   const [state,setState] = useState(true)
-  console.log(window.innerWidth);
 window.onresize= () => setState(!state);
   return (
     <Fragment>
