@@ -8,8 +8,8 @@
 }
 .grid-item {
   
-  margin-left: 24%;
-  margin-right: 24%;
+  margin-left: 23%;
+  margin-right: 23%;
 }
 .titles {
   margin-top: 12px;
@@ -38,7 +38,7 @@
 }
 @media screen and (max-width: 750px) {
   .cn-footer {
-    height: 430px;
+    
     width: 100%;
     display: block;
     grid-template-columns: auto auto auto auto;
@@ -51,11 +51,13 @@
       margin-right:0;
     }
     .titles{
-      margin-top: 0px;
-      margin-bottom: 0px;
+      margin-top: 5px;
+      margin-bottom: 5px;
       font-size: 16px;
-      font-family:serif;
-      font-weight: bold;
+      font-family: Lato, sans-serif;
+      font-weight: 500;
+      font-variant: tabular-nums;
+   
     }
 }
 .childds{

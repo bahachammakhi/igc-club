@@ -57,7 +57,6 @@ const Footer = () => {
       <div className="grid-item" style={{ textAlign: "center" }}>
         <img src={Logo} className="logos" alt="eara" />
         <div className="childds" style={{ marginTop: "25px" }}>
-          {" "}
           Copyright @ 2019 Istic google club
         </div>
         <div className="childds">All rights reserved</div>
