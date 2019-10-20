@@ -1,0 +1,42 @@
+.logo{
+    width: 200px;
+    margin:20px;
+}
+.button {
+    width: 120px;
+    height: 36px;
+    background-color: #1967d2;
+    border-radius: 5px;
+    color: white;
+  }
+  .img{
+    display: flex;
+    justify-content: center;
+  }
+  .button:hover {
+    width: 120px;
+    height: 36px;
+    background-color: #2b72d5;
+    border-radius: 5px;
+    color: white;
+  }
+  .wrapper{
+      padding:20px
+  }
+  .popover{
+    font-size: 20px;
+  }
+  .title{
+    color: #37474F;
+    font-size: 23.8px;
+    font-weight: bold;
+    padding:20px
+  }
+  .text{
+    padding: 20px;
+    padding-top:10px;
+    display: flex;
+    flex-direction: column;
+    color:gray;
+    font-size: 15px;
+  }

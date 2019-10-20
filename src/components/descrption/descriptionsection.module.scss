@@ -37,43 +37,82 @@
   flex-direction: column;
   width: 500px;
 }
-.button{
-    width:120px;
+.button {
+  width: 120px;
+  height: 36px;
+  background-color: #1967d2;
+  border-radius: 5px;
+  color: white;
+}
+.button:hover {
+  width: 120px;
+  height: 36px;
+  background-color: #2b72d5;
+  border-radius: 5px;
+  color: white;
+}
+@media only screen and (max-width: 1150px) {
+  .wrapper {
+    display: flex;
+    overflow: hidden;
+  }
+  .imgs {
+   
+    width: 500px;
+    border-radius: 4px;
+  }
+  .imgs::after {
+    transition: width 2s;
+  }
+  .button {
+    margin-top: 5%;
+    width: 120px;
     height: 36px;
     background-color: #1967d2;
     border-radius: 5px;
-    color:white;
-}
-.button:hover{
-    width:120px;
-    height: 36px;
-    background-color: #2b72d5;
-    border-radius: 5px;
-    color:white;
+    color: white;
+  }
+  .texts {
+    margin-top : 5%;
+    transition-property: inherit;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .smalldescription {
+    font-size: 22px;
+    margin-top: 5%;
+    color: gray;
+  }
 }
 @media only screen and (max-width: 768px) {
   .wrapper {
     display: flex;
-    flex-direction: column !important;
+    flex-direction: column-reverse !important;
     overflow: hidden;
   }
   .imgs {
-    margin-top: 20%;
+   
     width: 300px;
     border-radius: 4px;
   }
   .imgs::after {
     transition: width 2s;
   }
-  .button{
+  .button {
     margin-top: 5%;
-    width:120px;
+    width: 120px;
     height: 36px;
     background-color: #1967d2;
     border-radius: 5px;
-    color:white;
-}
+    color: white;
+  }
   .texts {
+    margin-top : 5%;
     transition-property: inherit;
     display: flex;
     flex-direction: column;
