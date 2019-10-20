@@ -40,11 +40,21 @@ const Members = () => {
   const [activeitem, changeActiveItem] = useState(0);
   const [nbcards, setNbcards] = useState(3);
 
-  useDidMount(() => {
+  // useDidMount(() => {
+  //   if (window.innerWidth < 768) {
+  //     setNbcards(1);
+  //   }
+  // });
+
+  window.onresize = () => {
     if (window.innerWidth < 768) {
       setNbcards(1);
+    } else if (window.innerWidth > 768 && window.innerWidth < 1100) {
+      setNbcards(2);
+    } else if (window.innerWidth > 1100) {
+      setNbcards(3);
     }
-  });
+  };
 
   const handleActiveItem = item => {
     changeActiveItem(item);

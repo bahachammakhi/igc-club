@@ -51,6 +51,44 @@
   border-radius: 5px;
   color: white;
 }
+@media only screen and (max-width: 1150px) {
+  .wrapper {
+    display: flex;
+    overflow: hidden;
+  }
+  .imgs {
+   
+    width: 500px;
+    border-radius: 4px;
+  }
+  .imgs::after {
+    transition: width 2s;
+  }
+  .button {
+    margin-top: 5%;
+    width: 120px;
+    height: 36px;
+    background-color: #1967d2;
+    border-radius: 5px;
+    color: white;
+  }
+  .texts {
+    margin-top : 5%;
+    transition-property: inherit;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .smalldescription {
+    font-size: 22px;
+    margin-top: 5%;
+    color: gray;
+  }
+}
 @media only screen and (max-width: 768px) {
   .wrapper {
     display: flex;

@@ -8,11 +8,21 @@ import Footer from "./Footer";
 import ResponsiveHeader from "./ResponsiveHeader/ResponsiveHeader";
 
 const WithLayoutRoute = ({ ...props }) => {
-  const [state, setState] = useState(true);
-  window.onresize = () => setState(!state);
+  const [state, setState] = useState(1800);
+  // window.onresize = () => {
+  //   resize();
+  // };
+  const resize = () => {
+    if (window.innerWidth < 700) {
+      setState(600);
+    } else {
+      setState(1800);
+    }
+  };
+  window.addEventListener("resize", resize);
   return (
     <Fragment>
-      <div>{window.innerWidth < 700 ? <ResponsiveHeader /> : <Header />}</div>
+      <div>{state < 700 ? <ResponsiveHeader /> : <Header />}</div>
       <div className={classes.body}>
         <Route {...props} />
       </div>
