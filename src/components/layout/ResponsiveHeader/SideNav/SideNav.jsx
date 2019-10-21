@@ -5,7 +5,7 @@ import { Icon } from "antd";
 import classes from "./sidenav.module.scss";
 const SideNav = ({ navitems, match, setOpen }) => {
   const navlinks = navitems.map(item => {
-    if (item === "About" && match.path === "/") {
+    if (item === "Accueil" && match.path === "/") {
       return (
         <Link
           className={classes.navitem}

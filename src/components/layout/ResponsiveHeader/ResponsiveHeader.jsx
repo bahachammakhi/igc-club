@@ -58,7 +58,7 @@ const ResponsiveHeader = () => {
           >
             <SideNav
               setOpen={setOpened}
-              navitems={["About", "Forum", "Info"]}
+              navitems={["Accueil", "Forum", "Info"]}
             />{" "}
           </div>
         ) : (

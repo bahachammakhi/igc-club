@@ -29,7 +29,7 @@ const WithLayoutRoute = ({ ...props }) => {
 
   return (
     <Fragment>
-      <div>{state < 700 ? <ResponsiveHeader /> : <Header />}</div>
+      <div className={classes.header} >{state < 700 ? <ResponsiveHeader /> : <Header />}</div>
       <div className={classes.body}>
         <Route {...props} />
       </div>
