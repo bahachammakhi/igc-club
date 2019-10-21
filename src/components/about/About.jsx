@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import classes from "./about.module.scss";
+import _ from "lodash";
 
 const About = ({ img, title, details, direction }) => {
   const [state, handlestate] = useState(true);
   const resize = () => {
     handlestate(!state);
+    // document.location.reload(true);
   };
-  window.addEventListener("resize", resize);
+  window.addEventListener("resize", _.debounce(resize, 800));
   if (window.innerWidth < 768) {
     direction = "";
   }
