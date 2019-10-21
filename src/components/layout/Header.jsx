@@ -1,32 +1,49 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { withRouter,Link } from "react-router-dom";
 import "./header.css";
 import Logo from "./logo.jpg";
 import { Icon } from "antd";
 const objnav = [
-  "Home",
+  "Accueil",
   "Contact",
   "Notre équipe",
   "Qui sommes-nous",
   "Evénements"
 ];
-const content = objnav.map(post => (
-  <Link
-    to="first"
-    key={Math.floor(Math.random() * 10)}
-    className="nav-btn"
-    style={{ textDecoration: "none" }}
-  >
-    {post}
-  </Link>
-));
+// const content = objnav.map(post => {
+
+//   return(
+//   <Link
+//     to="first"
+//     key={Math.floor(Math.random() * 10)}
+//     className="nav-btn"
+//     style={{ textDecoration: "none" }}
+//   >
+//     {post}
+//   </Link>
+// )});
 
 const Header = ({ match }) => {
-  const content = objnav.map(post => (
-    <Link to="first" className="nav-btn" style={{ textDecoration: "none" }}>
-      {post}
-    </Link>
-  ));
+  console.log(match)
+  const content = objnav.map(post => {
+    if (post === "Accueil" && match.path === "/") {
+      return (
+        <Link
+          to="/"
+          className="nav-btn"
+          style={{ textDecoration: "none", color: "#4885ed" }}
+        >
+          {post}
+        </Link>
+      );
+    } else {
+      return (
+        <Link to="/" className="nav-btn" style={{ textDecoration: "none" }}>
+          {post}
+        </Link>
+      );
+    }
+  });
   return (
     <div className="header">
       <img className="logo" alt="logo" src={Logo} />
@@ -47,4 +64,4 @@ const Header = ({ match }) => {
     </div>
   );
 };
-export default Header;
+export default withRouter(Header);
