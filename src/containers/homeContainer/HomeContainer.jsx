@@ -5,7 +5,7 @@ import classes from "./homecontainer.module.scss";
 import Partners from "../../components/partners/Partners";
 import About from "../../components/about/About";
 import logo from "./../../assets/logo.jpg";
-
+import Stat from "../../components/layout/Stat"
 const aboutsData = [
   {
     title: "A PROPOS IGC",
@@ -74,6 +74,9 @@ const HomeContainer = () => {
       <div className={classes.members}>
         <Members />
       </div>
+      <div>
+        <Stat />
+        </div>
       <div className={classes.partners}>
         <Partners />
       </div>
