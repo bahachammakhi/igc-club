@@ -6,6 +6,8 @@ import Partners from "../../components/partners/Partners";
 import About from "../../components/about/About";
 import logo from "./../../assets/logo.jpg";
 import Stat from "../../components/layout/Stat"
+import TimelineUpcoming from "../../components/timeline/TimelineUpcoming";
+
 const aboutsData = [
   {
     title: "A PROPOS IGC",
@@ -69,6 +71,9 @@ const HomeContainer = () => {
     <div className={classes.wrapper}>
       <div className={classes.description}>
         <DescriptionSection />
+      </div>
+      <div className={classes.timeline}>
+      <TimelineUpcoming />
       </div>
       <div className={classes.about}>{abouts}</div>
       <div className={classes.members}>
