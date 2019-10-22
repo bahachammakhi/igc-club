@@ -5,6 +5,7 @@ import classes from "./homecontainer.module.scss";
 import Partners from "../../components/partners/Partners";
 import About from "../../components/about/About";
 import logo from "./../../assets/logo.jpg";
+import Stat from "../../components/layout/Stat"
 import TimelineUpcoming from "../../components/timeline/TimelineUpcoming";
 
 const aboutsData = [
@@ -78,6 +79,9 @@ const HomeContainer = () => {
       <div className={classes.members}>
         <Members />
       </div>
+      <div>
+        <Stat />
+        </div>
       <div className={classes.partners}>
         <Partners />
       </div>
