@@ -16,14 +16,30 @@
   .content{
       cursor: pointer;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1168px) {
 
     .img{
-        width:350px;
+        width:600px;
     }
     .body{
         padding:0px;
         display: inline;
+       
+    }
+    .timeline{
+        margin:0px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+
+    .img{
+        width:300px;
+        margin-left: 8%;
+    }
+    .body{
+        padding:0px;
+        display: inline;
+        overflow: hidden;
     }
     .timeline{
         margin:0px;
