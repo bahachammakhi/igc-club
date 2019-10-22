@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "igc-club"
+    "default": "igc-club",
+    "staging": "igc-club"
   }
 }
