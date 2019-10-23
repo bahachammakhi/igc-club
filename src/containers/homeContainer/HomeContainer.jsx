@@ -74,14 +74,15 @@ const HomeContainer = () => {
       </div>
       <div className={classes.timeline}>
       <TimelineUpcoming />
-      </div>
+      </div> 
+      <div className={classes.stats}>
+        <Stat />
+        </div>
       <div className={classes.about}>{abouts}</div>
       <div className={classes.members}>
         <Members />
       </div>
-      <div className={classes.stats}>
-        <Stat />
-        </div>
+     
       <div className={classes.partners}>
         <Partners />
       </div>
