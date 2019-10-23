@@ -11,20 +11,20 @@ const Stat = () => {
       <div className={classes.title}>Quelques Chiffres</div>
       <div className={classes.gridcontaine}>
         <div className={classes.griditem}>
-          <img src={Com} className={classes.img} /> <div>Membre</div>{" "}
+          <img src={Com} className={classes.img} alt="img" /> <div>Membre</div>{" "}
           <CountUp end={30} duration={10} />
         </div>
         <div className={classes.griditem}>
-          <img src={Com} className={classes.img} /> <div>Community</div>{" "}
-          <CountUp end={70} duration={10} />
+          <img src={Com} className={classes.img} alt="img" /> <div>Community</div>{" "}
+          <CountUp end={104} duration={10} />
         </div>
         <div className={classes.griditem}>
-          <img src={Event} className={classes.img} />
+          <img src={Event} className={classes.img} alt="img" />
           <div>Evénement</div>
           <CountUp end={11} duration={4} />
         </div>
         <div className={classes.griditem}>
-          <img src={Web} className={classes.img} /> <div>Site web</div>{" "}
+          <img src={Web} className={classes.img} alt="img" /> <div>Site web</div>{" "}
           <CountUp end={3} duration={4} />
         </div>
       </div>
