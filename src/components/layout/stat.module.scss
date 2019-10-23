@@ -1,13 +1,18 @@
 .cnstat {
-  width: 100%;
   height: 450px;
+  background-color: #ffffff;
 }
+
+
+
+
+
 .gridcontaine {
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 10px;
   grid-gap: 50px;
-  height: 400px;
+  height: 100%;
   margin: 2%;
 }
 .griditem {
@@ -25,8 +30,33 @@
   letter-spacing: normal;
   line-height: 52.5px;
 }
-.img {
-  height: 200px;
-  width: 200px;
+.imgstat {
+  height: 220px;
+  width: 220px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 750px) {
+  
+    .cnstat {
+      height: 1330px;
+      background-color: #ffffff;
+    }
+    
+    
+    
+
+    .gridcontaine {
+      display: block;
+      grid-template-columns: auto auto auto auto;
+      padding: 10px;
+      grid-gap: 50px;
+      height: 100%;
+      margin: 1%;
+    }
+    .imgstat {
+      height: 200px;
+      width: 200px;
+      margin-bottom: 20px;
+    }
+ 
 }
