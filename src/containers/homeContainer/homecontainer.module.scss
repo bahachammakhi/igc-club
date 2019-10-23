@@ -7,11 +7,21 @@ position: relative;
 
 }
 
-
+.stats{
+    margin-bottom: 1%;
+}
 .wrapper{
     display: flex;
     flex-direction: column;
 }
 .description{
     padding-bottom: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    .stats{
+        margin-bottom: 20%;
+    }
+
+
 }

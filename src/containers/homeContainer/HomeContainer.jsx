@@ -79,7 +79,7 @@ const HomeContainer = () => {
       <div className={classes.members}>
         <Members />
       </div>
-      <div>
+      <div className={classes.stats}>
         <Stat />
         </div>
       <div className={classes.partners}>

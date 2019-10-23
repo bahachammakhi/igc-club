@@ -4,6 +4,8 @@ import CountUp from "react-countup";
 import Com from "../../assets/com.svg";
 import Event from "../../assets/event.svg";
 import Web from "../../assets/Web.svg";
+import Membre from "../../assets/Membre.svg";
+import TrackVisibility from "react-on-screen";
 
 const Stat = () => {
   return (
@@ -11,21 +13,37 @@ const Stat = () => {
       <div className={classes.title}>Quelques Chiffres</div>
       <div className={classes.gridcontaine}>
         <div className={classes.griditem}>
-          <img src={Com} className={classes.img} alt="img" /> <div>Membre</div>{" "}
-          <CountUp end={30} duration={10} />
+          <img src={Membre} className={classes.imgstat} /> <div>Membre</div>{" "}
+          <TrackVisibility once>
+            {({ isVisible }) =>
+              isVisible && <CountUp end={30} duration={10} delay={0.2} />
+            }
+          </TrackVisibility>
         </div>
         <div className={classes.griditem}>
-          <img src={Com} className={classes.img} alt="img" /> <div>Community</div>{" "}
-          <CountUp end={104} duration={10} />
+          <img src={Com} className={classes.imgstat} /> <div>Community</div>{" "}
+          <TrackVisibility once>
+            {({ isVisible }) =>
+              isVisible && <CountUp end={60} duration={10} delay={0.2} />
+            }
+          </TrackVisibility>
         </div>
         <div className={classes.griditem}>
-          <img src={Event} className={classes.img} alt="img" />
+          <img src={Event} className={classes.imgstat} />
           <div>Evénement</div>
-          <CountUp end={11} duration={4} />
+          <TrackVisibility once>
+            {({ isVisible }) =>
+              isVisible && <CountUp end={13} duration={10} delay={0.2} />
+            }
+          </TrackVisibility>
         </div>
         <div className={classes.griditem}>
-          <img src={Web} className={classes.img} alt="img" /> <div>Site web</div>{" "}
-          <CountUp end={3} duration={4} />
+          <img src={Web} className={classes.imgstat} /> <div>Site web</div>{" "}
+          <TrackVisibility once>
+            {({ isVisible }) =>
+              isVisible && <CountUp end={3} duration={10} delay={0.2} />
+            }
+          </TrackVisibility>
         </div>
       </div>
     </div>
