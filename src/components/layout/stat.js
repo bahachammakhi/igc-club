@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Stat.module.scss";
+import classes from "./stat.module.scss";
 import CountUp from "react-countup";
 import Com from "../../assets/com.svg";
 import Event from "../../assets/event.svg";
@@ -12,11 +12,11 @@ const Stat = () => {
       <div className={classes.gridcontaine}>
         <div className={classes.griditem}>
           <img src={Com} className={classes.img} /> <div>Membre</div>{" "}
-          <CountUp end={30} duration={4} />
+          <CountUp end={30} duration={10} />
         </div>
         <div className={classes.griditem}>
           <img src={Com} className={classes.img} /> <div>Community</div>{" "}
-          <CountUp end={70} duration={4} />
+          <CountUp end={70} duration={10} />
         </div>
         <div className={classes.griditem}>
           <img src={Event} className={classes.img} />

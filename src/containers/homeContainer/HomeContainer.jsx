@@ -5,7 +5,7 @@ import classes from "./homecontainer.module.scss";
 import Partners from "../../components/partners/Partners";
 import About from "../../components/about/About";
 import logo from "./../../assets/logo.jpg";
-import Stat from "../../components/layout/Stat"
+import Stat from "../../components/layout/stat"
 import TimelineUpcoming from "../../components/timeline/TimelineUpcoming";
 
 const aboutsData = [
