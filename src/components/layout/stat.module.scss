@@ -3,10 +3,6 @@
   background-color: #ffffff;
 }
 
-
-
-
-
 .gridcontaine {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -36,27 +32,22 @@
   margin-bottom: 20px;
 }
 @media screen and (max-width: 750px) {
-  
-    .cnstat {
-      height: 1330px;
-      background-color: #ffffff;
-    }
-    
-    
-    
+  .cnstat {
+    height: 1330px;
+    background-color: #ffffff;
+  }
 
-    .gridcontaine {
-      display: block;
-      grid-template-columns: auto auto auto auto;
-      padding: 10px;
-      grid-gap: 50px;
-      height: 100%;
-      margin: 1%;
-    }
-    .imgstat {
-      height: 200px;
-      width: 200px;
-      margin-bottom: 20px;
-    }
- 
+  .gridcontaine {
+    display: block;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    grid-gap: 50px;
+    height: 100%;
+    margin: 1%;
+  }
+  .imgstat {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+  }
 }
