@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Row, Col } from 'antd';
 import DescriptionSection from "../../components/descrption/DescriptionSection";
 import Members from "../../components/members/Members";
 import classes from "./homecontainer.module.scss";
@@ -7,6 +8,7 @@ import About from "../../components/about/About";
 import logo from "./../../assets/logo.jpg";
 import Stat from "../../components/layout/stat"
 import TimelineUpcoming from "../../components/timeline/TimelineUpcoming";
+import ContactFrom from "./../../components/contact/ContactForm"
 
 const aboutsData = [
   {
@@ -82,10 +84,18 @@ const HomeContainer = () => {
       <div className={classes.members}>
         <Members />
       </div>
-     
+      <div id="contact" className={classes.contact}>
+          <Col span={12} offset={6}>
+    <ContactFrom />
+      </Col>
+      </div>
+    
+        
+  
       <div className={classes.partners}>
         <Partners />
       </div>
+      
     </div>
   );
 };

@@ -36,6 +36,12 @@ const Header = ({ match }) => {
           {post}
         </Link>
       );
+    }else if(post ==="Contact" && match.path === "/") {
+      return(
+        <a href="#contact" className="nav-btn" >
+          Contact
+        </a>
+      )
     } else {
       return (
         <Link to="/" className="nav-btn" style={{ textDecoration: "none" }}>

@@ -13,7 +13,7 @@ const objnav = [
 const content = objnav.map(post => {
   return (
     <Link
-      to="first"
+      to="/"
       key={Math.floor(Math.random() * 10)}
       style={{ textDecoration: "none" }}
     >
