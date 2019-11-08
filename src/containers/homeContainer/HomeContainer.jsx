@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import { Row, Col } from 'antd';
+import { Row, Col } from "antd";
 import DescriptionSection from "../../components/descrption/DescriptionSection";
 import Members from "../../components/members/Members";
 import classes from "./homecontainer.module.scss";
 import Partners from "../../components/partners/Partners";
 import About from "../../components/about/About";
 import logo from "./../../assets/logo.jpg";
-import Stat from "../../components/layout/stat"
+import Stat from "../../components/layout/stat";
 import TimelineUpcoming from "../../components/timeline/TimelineUpcoming";
-import ContactFrom from "./../../components/contact/ContactForm"
+import ContactFrom from "./../../components/contact/ContactForm";
 
 const aboutsData = [
   {
@@ -70,32 +70,29 @@ const abouts = aboutsData.map((el, n) => {
 
 const HomeContainer = () => {
   return (
-    <div className={classes.wrapper}>
+    <div id="/" className={classes.wrapper}>
       <div className={classes.description}>
         <DescriptionSection />
       </div>
-      <div className={classes.timeline}>
-      <TimelineUpcoming />
-      </div> 
+      <div id="events" className={classes.timeline}>
+        <TimelineUpcoming />
+      </div>
       <div className={classes.stats}>
         <Stat />
-        </div>
-      <div className={classes.about}>{abouts}</div>
-      <div className={classes.members}>
+      </div>
+      <div id='about' className={classes.about}>{abouts}</div>
+      <div id="members" className={classes.members}>
         <Members />
       </div>
       <div id="contact" className={classes.contact}>
-          <Col span={12} offset={6}>
-    <ContactFrom />
-      </Col>
+        <Col span={12} offset={6}>
+          <ContactFrom />
+        </Col>
       </div>
-    
-        
-  
+
       <div className={classes.partners}>
         <Partners />
       </div>
-      
     </div>
   );
 };
