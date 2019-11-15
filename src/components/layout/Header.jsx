@@ -1,14 +1,14 @@
 import React from "react";
-import { withRouter,Link } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 import "./header.css";
 import Logo from "./logo.jpg";
 import { Icon } from "antd";
 const objnav = [
-  "Accueil",
-  "Contact",
-  "Notre équipe",
-  "Qui sommes-nous",
-  "Evénements"
+  { name: "Accueil", path: "#/" },
+  { name: "Contact", path: "#contact" },
+  { name: "Notre équipe", path: "#members" },
+  { name: "Qui sommes-nous", path: "#about" },
+  { name: "Evénements", path: "#events" }
 ];
 // const content = objnav.map(post => {
 
@@ -24,25 +24,17 @@ const objnav = [
 // )});
 
 const Header = ({ match }) => {
-  console.log(match)
+  console.log(match);
   const content = objnav.map(post => {
-    if (post === "Accueil" && match.path === "/") {
-      return (
-        <Link
-          to="/"
-          className="nav-btn"
-          style={{ textDecoration: "none", color: "#4885ed" }}
-        >
-          {post}
-        </Link>
-      );
-    } else {
-      return (
-        <Link to="/" className="nav-btn" style={{ textDecoration: "none" }}>
-          {post}
-        </Link>
-      );
-    }
+    return (
+      <a
+        href={post.path}
+        className="nav-btn"
+        style={{ textDecoration: "none" }}
+      >
+        {post.name}
+      </a>
+    );
   });
   return (
     <div className="header">
@@ -50,13 +42,13 @@ const Header = ({ match }) => {
       <div className="cn-btn">
         {content}
         <div className="media">
-          <a href="http://www.google.com">
+          <a  rel="noopener noreferrer" target="_blank" hre href="http://www.google.com">
             <Icon type="facebook" className="logo-media" />
           </a>
-          <a href="http://www.google.com">
+          <a  rel="noopener noreferrer" target="_blank" href="http://www.google.com">
             <Icon type="twitter" className="logo-media" />
           </a>
-          <a href="http://www.google.com">
+          <a  rel="noopener noreferrer" target="_blank" hre href="http://www.google.com">
             <Icon type="instagram" className="logo-media" />{" "}
           </a>
         </div>

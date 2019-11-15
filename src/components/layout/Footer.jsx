@@ -4,21 +4,22 @@ import { Icon } from "antd";
 import Logo from "./logo.jpg";
 import "./Footer.css";
 const objnav = [
-  "Home",
-  "Contact",
-  "Notre équipe",
-  "Qui sommes-nous",
-  "Evénements"
+  { name: "Accueil", path: "#/" },
+  { name: "Contact", path: "#contact" },
+  { name: "Notre équipe", path: "#members" },
+  { name: "Qui sommes-nous", path: "#about" },
+  { name: "Evénements", path: "#events" }
 ];
+
 const content = objnav.map(post => {
   return (
-    <Link
-      to="first"
+    <a
+      href={post.path}
       key={Math.floor(Math.random() * 10)}
       style={{ textDecoration: "none" }}
     >
-      <div className="child"> {post}</div>
-    </Link>
+      <div className="child"> {post.name}</div>
+    </a>
   );
 });
 const Footer = () => {

@@ -21,6 +21,8 @@
   padding: 12px;
   margin: 5px;
   color: rgb(124, 124, 124);
+  text-decoration: none;
+  text-emphasis: none;
 }
 .nav-btn:hover {
   color: #4885ed;
@@ -42,6 +44,7 @@
     padding: 5px;
     margin: auto;
     color: #111;
+    text-decoration: none;
     font-size: 14px;
   }
   .nav-btn:hover {

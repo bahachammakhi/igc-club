@@ -1,10 +1,7 @@
 .wrapper {
   display: flex;
   flex-direction: row;
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  transition: linear;
+  animation: fadeInAnimation 3s infinite;
 }
 
 @keyframes fadeInAnimation {
@@ -57,7 +54,6 @@
     overflow: hidden;
   }
   .imgs {
-   
     width: 500px;
     border-radius: 4px;
   }
@@ -73,7 +69,7 @@
     color: white;
   }
   .texts {
-    margin-top : 5%;
+    margin-top: 5%;
     transition-property: inherit;
     display: flex;
     flex-direction: column;
@@ -96,7 +92,6 @@
     overflow: hidden;
   }
   .imgs {
-   
     width: 300px;
     border-radius: 4px;
   }
@@ -112,7 +107,7 @@
     color: white;
   }
   .texts {
-    margin-top : 5%;
+    margin-top: 5%;
     transition-property: inherit;
     display: flex;
     flex-direction: column;

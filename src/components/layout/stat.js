@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Stat.module.scss";
+import classes from "./stat.module.scss";
 import CountUp from "react-countup";
 import Com from "../../assets/com.svg";
 import Event from "../../assets/event.svg";
@@ -16,7 +16,7 @@ const Stat = () => {
           <img src={Membre} className={classes.imgstat} /> <div>Membre</div>{" "}
           <TrackVisibility once>
             {({ isVisible }) =>
-              isVisible && <CountUp end={30} duration={5} delay={0.2} />
+              isVisible && <CountUp end={30} duration={10} delay={0.2} />
             }
           </TrackVisibility>
         </div>
@@ -24,7 +24,7 @@ const Stat = () => {
           <img src={Com} className={classes.imgstat} /> <div>Community</div>{" "}
           <TrackVisibility once>
             {({ isVisible }) =>
-              isVisible && <CountUp end={60} duration={5} delay={0.2} />
+              isVisible && <CountUp end={60} duration={10} delay={0.2} />
             }
           </TrackVisibility>
         </div>
@@ -33,7 +33,7 @@ const Stat = () => {
           <div>Evénement</div>
           <TrackVisibility once>
             {({ isVisible }) =>
-              isVisible && <CountUp end={13} duration={5} delay={0.2} />
+              isVisible && <CountUp end={13} duration={10} delay={0.2} />
             }
           </TrackVisibility>
         </div>
@@ -41,7 +41,7 @@ const Stat = () => {
           <img src={Web} className={classes.imgstat} /> <div>Site web</div>{" "}
           <TrackVisibility once>
             {({ isVisible }) =>
-              isVisible && <CountUp end={3} duration={5} delay={0.2} />
+              isVisible && <CountUp end={3} duration={10} delay={0.2} />
             }
           </TrackVisibility>
         </div>
