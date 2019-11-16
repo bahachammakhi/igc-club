@@ -16,16 +16,23 @@
   float: right;
   width: 70%;
   height: 100%;
+ 
+
 }
 .nav-btn {
   padding: 12px;
-  margin: 5px;
-  color: rgb(124, 124, 124);
+  margin: 6px;
+  color: #5f6368;
+  font-size: 16px;
+    font-weight: 450;
+    text-transform: capitalize;
   text-decoration: none;
   text-emphasis: none;
 }
 .nav-btn:hover {
-  color: #4885ed;
+  color: #5f6368;
+  border-bottom: .2400rem solid #5f6368;
+  border-radius:4px;
 }
 
 .media {

@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./stat.module.scss";
+import classes from "./Stat.module.scss";
 import CountUp from "react-countup";
 import Com from "../../assets/com.svg";
 import Event from "../../assets/event.svg";

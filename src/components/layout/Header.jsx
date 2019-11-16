@@ -10,6 +10,7 @@ const objnav = [
   { name: "Qui sommes-nous", path: "#about" },
   { name: "Evénements", path: "#events" }
 ];
+
 // const content = objnav.map(post => {
 
 //   return(
@@ -23,8 +24,11 @@ const objnav = [
 //   </Link>
 // )});
 
-const Header = ({ match }) => {
-  console.log(match);
+const Header = ( match ) => {
+  
+
+
+
   const content = objnav.map(post => {
     return (
       <a
@@ -38,7 +42,11 @@ const Header = ({ match }) => {
   });
   return (
     <div className="header">
+       <a
+      href="#/"
+      >
       <img className="logo" alt="logo" src={Logo} />
+      </a>
       <div className="cn-btn">
         {content}
         <div className="media">

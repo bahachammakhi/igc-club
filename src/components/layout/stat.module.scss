@@ -1,7 +1,3 @@
-.cnstat {
-  height: 450px;
-  background-color: #ffffff;
-}
 
 .gridcontaine {
   display: grid;
@@ -27,27 +23,23 @@
   line-height: 52.5px;
 }
 .imgstat {
-  height: 220px;
-  width: 220px;
-  margin-bottom: 20px;
+  height: 200px;
+  width: 200px;
+ 
 }
 @media screen and (max-width: 750px) {
-  .cnstat {
-    height: 1330px;
-    background-color: #ffffff;
-  }
+ 
 
   .gridcontaine {
     display: block;
     grid-template-columns: auto auto auto auto;
-    padding: 10px;
     grid-gap: 50px;
     height: 100%;
-    margin: 1%;
+  
   }
   .imgstat {
-    height: 200px;
-    width: 200px;
-    margin-bottom: 20px;
+    height: 100px;
+    width: 100px;
+  
   }
 }
