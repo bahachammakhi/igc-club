@@ -85,9 +85,9 @@ const HomeContainer = () => {
         <Members />
       </div>
       <div id="contact" className={classes.contact}>
-        <Col span={12} offset={6}>
+        
           <ContactFrom />
-        </Col>
+        
       </div>
 
       <div className={classes.partners}>

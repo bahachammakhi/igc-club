@@ -4,16 +4,18 @@ import classes from "./contactForm.module.scss"
 const { TextArea } = Input;
 
 const formItemLayout = {
-    labelCol: { span:  4 },
-    wrapperCol: { span: 20 },
+    labelCol: { span:  6 },
+    wrapperCol: { span: 12 },
   };
+
 
 const ContactFrom = () =>{
     
     return(
       <div className={classes.wrapper}>
+        <h1 className={classes.text}>Contactez-nous</h1>
          <Form.Item {...formItemLayout} label="Nom">
-        <Input placeholder="Nom et prenom" size="large" />
+        <Input placeholder="Nom et prenom"  />
       </Form.Item>
       <Form.Item {...formItemLayout} label="Email">
         <Input  placeholder="Adresse-email" size="large" />
@@ -21,10 +23,10 @@ const ContactFrom = () =>{
       <Form.Item {...formItemLayout} label="Object" size="large">
         <Input  placeholder="Sujet de message" />
       </Form.Item>
-      <Form.Item {...formItemLayout} label="Message" size="large">
-        <TextArea  placeholder="Message ..." autosize={ {minRows: 8, maxRows: 6 }}/>
+      <Form.Item {...formItemLayout} label="Message" size="small">
+        <TextArea  placeholder="Message ..." autosize={ {minRows: 3}}/>
       </Form.Item>
-      <div style={{textAlign:"center"}}>
+      <div>
            <Button type="primary" size="omitted" loading={false}>Envoyer</Button>
       </div>
    

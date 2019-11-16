@@ -43,7 +43,7 @@ const Footer = () => {
             type="mail"
             style={{ fontSize: "15px", color: "grey", marginRight: "5px" }}
           />
-          hakimmaaouai@gmail.com
+         igc.istic@gmail.com
         </div>
         <div className="childds">
           {" "}
@@ -51,7 +51,7 @@ const Footer = () => {
             type="phone"
             style={{ fontSize: "15px", color: "grey", marginRight: "5px" }}
           />
-          Tel : 25605102
+          Tel : 216 96171678
         </div>
       </div>
 
